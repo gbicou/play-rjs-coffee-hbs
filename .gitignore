@@ -1,6 +1,8 @@
 *.class
 *.log
 
+node_modules/
+
 # sbt specific
 .cache/
 .history/
@@ -21,6 +23,7 @@ bin/
 /db
 .eclipse
 /logs/
+/project/project
 tmp/
 test-result
 server.pid
