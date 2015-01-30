@@ -4,9 +4,10 @@ version := "2.3-SNAPSHOT"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
-scalaVersion := "2.11.1"
+scalaVersion := "2.11.5"
 
 libraryDependencies ++= Seq(
+  "org.webjars" % "jquery" % "2.1.3",
   "org.webjars" % "requirejs" % "2.1.15"
 )
 

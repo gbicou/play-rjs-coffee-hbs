@@ -1,8 +1,11 @@
 require.config
   paths:
-    templates: "../templates"
+    jquery:     '../lib/jquery/jquery' # webjar
+    templates:  '../templates'         # hbs templates
 
-require ["templates/demo"], (template) ->
+require ["jquery", "templates/demo"], ($, template) ->
 
-  document.getElementById('demo').innerHTML = template {name: 'sbt-hbs', version: '0.0.1'}
+  $ ->
+    $.get '/demo', (result) ->
+      $('#demo').html(template(result))
 
