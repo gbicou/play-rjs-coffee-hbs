@@ -18,7 +18,9 @@ pipelineStages := Seq(rjs, digest, gzip)
 
 HbsKeys.amd := true
 
-// HbsKeys.min := false
+// HbsKeys.min := false // minify on precompilation or use rjs optimization
 
 // HbsKeys.knownOnly := true
+
+HbsKeys.root := "templates/" // path relative to assets (stripped from path for templates names)
 
