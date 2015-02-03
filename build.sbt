@@ -8,7 +8,8 @@ scalaVersion := "2.11.5"
 
 libraryDependencies ++= Seq(
   "org.webjars" % "jquery" % "2.1.3",
-  "org.webjars" % "requirejs" % "2.1.15"
+  "org.webjars" % "requirejs" % "2.1.15",
+  "org.webjars" % "handlebars" % "2.0.0-1"
 )
 
 // JsEngineKeys.engineType := JsEngineKeys.EngineType.Node
@@ -17,8 +18,6 @@ libraryDependencies ++= Seq(
 pipelineStages := Seq(rjs, digest, gzip)
 
 HbsKeys.amd := true
-
-// HbsKeys.min := false // minify on precompilation or use rjs optimization
 
 // HbsKeys.knownOnly := true
 
