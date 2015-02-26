@@ -9,7 +9,7 @@ scalaVersion := "2.11.5"
 libraryDependencies ++= Seq(
   "org.webjars" % "jquery" % "2.1.3",
   "org.webjars" % "requirejs" % "2.1.15",
-  "org.webjars" % "handlebars" % "2.0.0-1"
+  "org.webjars" % "handlebars" % "3.0.0-1"
 )
 
 // JsEngineKeys.engineType := JsEngineKeys.EngineType.Node
